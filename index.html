@@ -46,7 +46,7 @@ header.solid .brand b{color:var(--txt)}header.solid .brand small{color:var(--mut
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:130px 0 90px;color:#fff;
  background:radial-gradient(60% 70% at 85% 40%,rgba(228,87,46,.38),transparent 70%),radial-gradient(50% 60% at 0% 100%,rgba(228,87,46,.18),transparent 70%),linear-gradient(135deg,#141210,#26140e 60%,#3a1a0f)}
 .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
-.hero-img{margin:0;justify-self:center;position:relative}.hero-img img{display:block;width:100%;max-width:420px;height:auto;aspect-ratio:664/960;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.18);box-shadow:0 40px 80px -30px rgba(0,0,0,.8),0 0 0 8px rgba(255,255,255,.05)}
+.hero-img{margin:0;justify-self:center;position:relative}.hero-img img{display:block;width:100%;max-width:420px;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:22px;border:1px solid rgba(255,255,255,.18);box-shadow:0 40px 80px -30px rgba(0,0,0,.8),0 0 0 8px rgba(255,255,255,.05)}
 .hero-img figcaption{position:absolute;left:14px;bottom:14px;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);color:#fff;font-size:.78rem;padding:8px 12px;border-radius:10px;line-height:1.3}.hero-img figcaption b{display:block;color:var(--ac2)}
 @media(max-width:960px){.hero-grid{grid-template-columns:1fr;gap:40px}.hero-img img{max-width:340px}}
 .hero .eyebrow{color:var(--ac2)}
@@ -86,6 +86,7 @@ header.solid .brand b{color:var(--txt)}header.solid .brand small{color:var(--mut
 .g-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:12px}
 .g-item{position:relative;border-radius:12px;overflow:hidden;cursor:zoom-in;background:var(--card)}
 .g-item:first-child{grid-column:span 2;grid-row:span 2}
+.g-loja .g-wide{grid-column:span 2}.g-loja .g-wide:nth-child(6) img{object-position:center 72%}.g-loja .g-wide:nth-child(7) img{object-position:center 60%}
 .g-colecao .g-item img{object-position:center 28%}
 .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s}.g-item:hover img{transform:scale(1.07)}
 .lb{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.92);display:none;place-items:center;padding:16px;cursor:zoom-out}.lb.open{display:grid}
@@ -110,7 +111,7 @@ header.solid .brand b{color:var(--txt)}header.solid .brand small{color:var(--mut
 .faq summary{cursor:pointer;font-weight:700;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px}
 .faq summary::after{content:"+";color:var(--ac);font-size:1.5rem;line-height:1;transition:transform .2s}.faq details[open] summary::after{transform:rotate(45deg)}
 .faq p{color:var(--muted);margin-top:10px}
-.cta-band{position:relative;padding:96px 0;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('img/2.jpg') center/cover,linear-gradient(135deg,#0f2027,#e4572e)}
+.cta-band{position:relative;padding:96px 0;text-align:center;color:#fff;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('img/loja-corredor.jpg') center 45%/cover,linear-gradient(135deg,#0f2027,#e4572e)}
 .cta-band h2{font-size:clamp(2.2rem,6vw,4rem);max-width:820px;margin:0 auto}.cta-band p{max-width:560px;margin:14px auto 30px;color:rgba(255,255,255,.85)}
 footer{padding:44px 0 34px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
 .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;align-items:center}.foot .brand b{color:var(--txt)}.foot .brand small{color:var(--muted)}
@@ -152,13 +153,13 @@ footer{padding:44px 0 34px;border-top:1px solid var(--line);color:var(--muted);f
     <div><strong>10x</strong><span>Sem juros no cartão</span></div>
   </div>
 </div>
-  <figure class="hero-img"><img src="img/2.jpg" width="664" height="960" alt="Fachada da Ótica Ebenézer em Embu das Artes" fetchpriority="high"><figcaption><b>Ótica Ebenézer</b>R. Augusto de Almeida Batista, 2278</figcaption></figure>
+  <figure class="hero-img"><img src="img/fachada.jpg" width="960" height="1280" alt="Fachada da Ótica Ebenézer em Embu das Artes" fetchpriority="high"><figcaption><b>Ótica Ebenézer</b>R. Augusto de Almeida Batista, 2278</figcaption></figure>
 </div></section>
 
 <div class="marquee" aria-hidden="true"><div><span>EXAME DE VISTA GRATUITO</span><span>PREÇO DE FÁBRICA</span><span>10X SEM JUROS</span><span>ENTREGA RÁPIDA</span><span>COBRIMOS ORÇAMENTOS</span><span>EXAME DE VISTA GRATUITO</span><span>PREÇO DE FÁBRICA</span><span>10X SEM JUROS</span><span>ENTREGA RÁPIDA</span><span>COBRIMOS ORÇAMENTOS</span><span>EXAME DE VISTA GRATUITO</span><span>PREÇO DE FÁBRICA</span><span>10X SEM JUROS</span><span>ENTREGA RÁPIDA</span><span>COBRIMOS ORÇAMENTOS</span><span>EXAME DE VISTA GRATUITO</span><span>PREÇO DE FÁBRICA</span><span>10X SEM JUROS</span><span>ENTREGA RÁPIDA</span><span>COBRIMOS ORÇAMENTOS</span></div></div>
 
 <section id="sobre"><div class="wrap about-grid">
-  <div class="about-img reveal"><img src="img/1.jpg" alt="Ótica Ebenézer" loading="lazy"><div class="chip"><strong>5,0 ★</strong><span>403 avaliações no Google</span></div></div>
+  <div class="about-img reveal"><img src="img/loja-atendimento.jpg" alt="Interior da Ótica Ebenézer com balcão de atendimento e armações" width="1200" height="1600" loading="lazy"><div class="chip"><strong>5,0 ★</strong><span>403 avaliações no Google</span></div></div>
   <div class="about-txt reveal">
     <span class="eyebrow">Sobre nós</span>
     <h2>A ótica mais perto da sua casa</h2>
@@ -181,7 +182,7 @@ footer{padding:44px 0 34px;border-top:1px solid var(--line);color:var(--muted);f
 
 <section class="alt" id="galeria"><div class="wrap">
   <div class="sec-head reveal"><span class="eyebrow">Galeria</span><h2>Um pouco do <em>nosso dia a dia</em></h2><p>Fotos do nosso espaço e do que fazemos com carinho.</p></div>
-  <div class="g-grid"><figure class="g-item reveal"><img src="img/1.jpg" alt="Foto 1 – Ótica Ebenézer" loading="lazy"></figure><figure class="g-item reveal"><img src="img/4.jpg" alt="Foto 2 – Ótica Ebenézer" loading="lazy"></figure><figure class="g-item reveal"><img src="img/5.jpg" alt="Foto 3 – Ótica Ebenézer" loading="lazy"></figure></div>
+  <div class="g-grid g-loja"><figure class="g-item reveal"><img src="img/loja-corredor.jpg" alt="Corredor da Ótica Ebenézer com expositores de armações" loading="lazy"></figure><figure class="g-item reveal"><img src="img/loja-expositores.jpg" alt="Expositores de armações e acessórios" loading="lazy"></figure><figure class="g-item reveal"><img src="img/loja-armacoes.jpg" alt="Parede com armações de grau e infantis" loading="lazy"></figure><figure class="g-item reveal"><img src="img/loja-infantil.jpg" alt="Cantinho infantil da Ótica Ebenézer" loading="lazy"></figure><figure class="g-item reveal"><img src="img/loja-oculos-sol.jpg" alt="Parede de óculos de sol" loading="lazy"></figure><figure class="g-item reveal g-wide"><img src="img/loja-cafe.jpg" alt="Cantinho do café para os clientes" loading="lazy"></figure><figure class="g-item reveal g-wide"><img src="img/loja-atendimento.jpg" alt="Balcão de atendimento e cadeiras" loading="lazy"></figure></div>
   <div class="lb" id="lb"><img alt=""></div>
 </div></section>
 
